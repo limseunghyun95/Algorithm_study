@@ -11,9 +11,5 @@ def solution(a, b):
         
     for i in range(small, big + 1):
         answer += i
-        
-    print(answer)
-        
+    
     return answer
-
-solution(3,5)
