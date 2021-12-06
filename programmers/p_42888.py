@@ -18,11 +18,5 @@ def solution(record):
             answer.append("{}님이 들어왔습니다.".format(user[line[1]]))
         elif line[0] == "Leave":
             answer.append("{}님이 나갔습니다.".format(user[line[1]]))
-            
-    print(answer)
-        
     
     return answer
-
-
-solution(["Enter uid1234 Muzi", "Enter uid4567 Prodo","Leave uid1234","Enter uid1234 Prodo","Change uid4567 Ryan"])
