@@ -33,4 +33,4 @@ if __name__ == "__main__":
         
         answer.append(_sum)
             
-    print("\n".join(list(map(str, answer))))   
+    print("\n".join(list(map(str, answer))))
