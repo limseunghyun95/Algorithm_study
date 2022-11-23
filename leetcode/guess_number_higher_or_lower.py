@@ -2,18 +2,20 @@
 
 # def guess(num: int) -> int:
 
+
 class Solution:
     def guessNumber(self, n: int) -> int:
         start = 1
         end = n
-        
+
         while start <= end:
             mid = (end + start) // 2
-            
-            if guess(mid) == 0:
+
+            res = guess(mid)
+
+            if res == 0:
                 return mid
-                
-            if guess(mid) == -1:
+            elif res == -1:
                 end = mid - 1
-            elif guess(mid) == 1:
+            elif res == 1:
                 start = mid + 1
