@@ -11,9 +11,3 @@ class Solution:
             i += 1
 
         return False
-
-
-# for test
-s = Solution()
-a = s.isPerfectSquare(3000)
-print(a)
