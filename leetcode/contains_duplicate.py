@@ -1,14 +1,19 @@
 # source : https://leetcode.com/problems/contains-duplicate/
+from typing import List
+
 
 class Solution:
-    def containsDuplicate(self, nums):
+    def containsDuplicate(self, nums: List[int]) -> bool:
+
+        nums.sort()
+
+        if len(nums) == 1:
+            return False
         
-        num_dict = dict()
-        
-        for i in nums:
-            if i in num_dict.keys():
+        prev = nums[0]
+        for n in nums[1:]:
+            if prev == n:
                 return True
-            else:
-                num_dict[i] = True
-                
+            prev = n
+
         return False
